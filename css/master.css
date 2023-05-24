@@ -1,0 +1,155 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  border-collapse: collapse;
+}
+
+#wraper{
+  max-width: 1850px;
+  min-width: 940px;
+  margin: 0 auto;
+  display: flex;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+}
+.contener-logo-titre{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.titre{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Couleur-bleux{
+  color: #527bea;
+}
+
+.menue-principale{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menue-principale ul{
+  display: flex;
+}
+
+.menue-principale li{
+  margin: 5px 10px ;
+}
+
+.item {
+  color: #fff;
+  padding: 5px;
+  margin: 5px auto;
+  display: block;
+}
+
+.item:hover{
+  color: #999;
+}
+
+
+#recherche{
+  display: flex;
+  border: 10px solid #fff;
+  border-radius: 30px;
+  margin: 5px 20px ;
+}
+
+
+.font-rouge{
+  background-color: #ae2123;
+  color: #fff;
+}
+
+.fond-bleux{
+  background-color: #527bea;
+  color: #fff;
+}
+
+.fond_grisFoncer{
+  background-color: #858585;
+  color: #fff;
+}
+
+.fond-griz{
+  background-color: #ededed;
+}
+
+.titreAR {
+  margin: 20px ;
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+main{
+  display: flex;
+}
+
+article{
+  border: 2px solid #858585;
+  border-right: 10px groove #ededed;
+  border-bottom: 10px groove #ededed;
+  margin: 20px;
+  display: flex;
+}
+
+.contener-bouton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+table{
+  display: block;
+  margin: 50px 0px 10px 0px;
+}
+tbody{
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+tr{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 20px;
+  margin: 0px 10px ;
+}
+
+.bouton{
+  border: 20px solid #527bea;
+  border-radius: 30px;
+  margin: 20px ;
+}
+
+.bouton:hover{
+  border: 20px solid #BAF1CB;
+  background-color: #BAF1CB;
+  color: #999;
+}
+
+
+.ar2c{
+
+}
+
+.col{
+
+}
