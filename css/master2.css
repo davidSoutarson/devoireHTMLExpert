@@ -1,3 +1,12 @@
+:root{
+  --rouge: #ae2123;
+  --bleu: #527bea;
+  --grisClair: #ededed;
+  --grisFonce: #858585;
+  --textRollOver: #999;
+  --boutonsRollOver:#BAF1CB;
+}
+
 *{
   margin: 0px;
   padding: 0px;
@@ -16,8 +25,21 @@
   flex-direction: column;
 }
 
-.entete{
+.fond-rouge{
+  background-color: var(--rouge,);
+}
 
+.fond-gris-fonce{
+  background-color: var(--grisFonce,);
+}
+
+.fond-gris-clair{
+  background-color: var(--grisClair,);
+}
+
+.entete{
+  border: 2px dashed blue ;
+  margin: 10px;
 }
 
 .contener-logoTitre{
@@ -25,5 +47,9 @@
 }
 
 .titrePrincipal{
+
+}
+
+.menue-principal{
 
 }
