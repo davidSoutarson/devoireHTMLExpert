@@ -27,11 +27,15 @@
     </header>
 
     <main>
-    <div class="artice2colne">
-
-      <article class="colGauche">
+    <div class="col-X2">
+      <article class="ar colGauche">
         <h2 class="titreAR fond-rouge">La une</h2>
-        <img src="images/rue-lyon-700x400.jpg" alt="Rue Lyon place des Terreaux">
+        <picture>
+          <source media="(max-width:470px)" srcset="images/rue-lyonMobile.jpg">
+          <source media="(max-width:940px)" srcset= "images/rue-lyonMobileHD.jpg">
+          <img src="images/rue-lyonMobile.jpg" srcset="images/rue-lyon.jpg" alt="Rue Lyon place des Terreaux">
+        </picture>
+
         <h3>Ar grande zone Gauche</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -51,72 +55,85 @@
           <button class="bouton arondi fond-bleu texte-blanc" type="button" name="button" >Commender l'afiche</button>
         </div>
       </article>
-    </div>
 
       <div class="colDroite">
-      <article>
-        <h2 class="titreAR fond-rouge">Horaire</h2>
 
-        <table>
-          <tr class="fond-bleu">
-            <th> Heur </th>
-            <th> Film </th>
-            <th> Sale </th>
-          </tr>
-          <tr>
-            <td>12h</td>
-            <td>Tommy</td>
-            <td>1</td>
-          </tr>
-          <tr class="fond-gris-fonce">
-            <td>14h</td>
-            <td>In the Wood</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>14h</td>
-            <td>Le chien perdu</td>
-            <td>2</td>
-          </tr>
-          <tr class="fond-gris-fonce">
-            <td>18h</td>
-            <td>Lavoir et les siens</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>18h</td>
-            <td>Truquer sur gage</td>
-            <td>2</td>
-          </tr>
-        </table>
-      </article>
+        <article class="ar horaire">
+          <h2 class="titreAR fond-rouge">Horaire</h2>
+          <table>
+            <tr class="fond-bleu">
+              <th> Heur </th>
+              <th> Film </th>
+              <th> Sale </th>
+            </tr>
+            <tr>
+              <td>12h</td>
+              <td>Tommy</td>
+              <td>1</td>
+            </tr>
+            <tr class="fond-gris-fonce">
+              <td>14h</td>
+              <td>In the Wood</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>14h</td>
+              <td>Le chien perdu</td>
+              <td>2</td>
+            </tr>
+            <tr class="fond-gris-fonce">
+              <td>18h</td>
+              <td>Lavoir et les siens</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>18h</td>
+              <td>Truquer sur gage</td>
+              <td>2</td>
+            </tr>
+          </table>
+        </article>
 
-      <div class="vcard">
-        <h2 class="titreAR fond-rouge">Addrese</h2>
-        <h3 class="fn org"> Le club 118 </h3>
-        <address class="adr">
-          <span class = street-addrese>118 rue Du club</span>
-            <span class = postal-code >69000</span>
-            <span class="locality">Lyon</span>
-        </address>
-      </div>
-
-      <article>
-        <h2 class="titreAR fond-rouge">PortFolio</h2>
-        <img src="images/NBPathe-Bellecour-700x400.jpg" alt="Photo noir et blanc Pathé Bellecour">
-
-          <div class="floutage-transparent">
-          <button class="btnRegader fond-rouge GrizT" type="button" name="button" >regarder</button>
+        <article class="ar addrese">
+          <div class="vcard">
+            <h2 class="titreAR fond-rouge">Addrese</h2>
+            <h3 class="fn org"> Le club 118 </h3>
+            <address class="adr">
+              <span class = street-addrese>118 rue Du club</span>
+              <span class = postal-code >69000</span>
+              <span class="locality">Lyon</span>
+            </address>
           </div>
-      </article>
-      </div>
+        </article>
 
 
-      <article class="artice col2neBas">
+        <article class="ar portFolio">
+          <h2 class="titreAR fond-rouge">PortFolio</h2>
+          <picture>
+            <source media="max-width:470px" srcet="images/Pathe-BellecourMobile.jpg">
+            <source media="max-width-width:940px" srcet="images/Pathe-BellecourMobileHD.jpg">
+            <img src="images/Pathe-BellecourMobile.jpg" srcet="images/Pathe-Bellecour.jpg"  alt="Photo noir et blanc du cinéma Pathé Lyon Bellecour">
+          </picture>
+
+          <div class="contener-bouton floutage-transparent">
+            <button class="btnRegader fond-rouge GrizT" type="button" name="button" >regarder</button>
+          </div>
+
+          </article>
+
+        </div>
+
+    </div>
+
+      <article class="ar col2neBas">
 
           <div class="col">
             <h2 class="titreAR fond-rouge">Cette semaine</h2>
-            <img src="images/Drive-in-theater-700x400.jpg" alt="Drive-in theatre">
+            <picture>
+              <source media="max-width:470px" srcet="images/Drive-in-theaterMobile.jpg">
+              <source media="max-width-width:940px" srcet="images/Drive-in-theaterMobileHD.jpg">
+              <img src="images/Drive-in-theaterMobile.jpg"  srcet="images/Drive-in-theater.jpg" alt="Photo cinéma Drive in et ses voiture encien">
+            </picture>
             <h3>Zone base Gauche</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -127,7 +144,11 @@
 
           </div>
           <div class="col">
-            <img src="images/siegeDeCinemat-700x400.jpg" alt="Des sige de cinéma">
+            <picture>
+              <source media="max-width:470px" srcet="images/siegeDeCinematMobile.jpg">
+              <source media="max-width-width:940px" srcet="images/siegeDeCinematMobileHD.jpg">
+              <img src="images/siegeDeCinematMobile.jpg" srcet="images/siegeDeCinema.jpg" alt="Des sige de cinéma">
+            </picture>
             <h3>Zone base Droit</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -143,8 +164,8 @@
     </main>
 
     <footer class="fond-gris-clair">
-      <nav>
-        <ul>
+      <nav class="footNav">
+        <ul class =" liste-3col">
           <li>CLUB 108</li>
           <li>Carte club</li>
           <li>Scéance priver</li>
@@ -161,16 +182,17 @@
           <li>A proximité</li>
           <li>Espace partenaire</li>
         </ul>
+        <img src="images/logo.png" alt="logo club 108">
       </nav>
-      <img src="images/logo.png" alt="logo club 108">
 
-      <p>
+
+      <!-- <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
             src="http://jigsaw.w3.org/css-validator/images/vcss"
             alt="CSS Valide !" >
     </a>
-  </p>
+  </p> -->
     </footer>
     </div>
   </body>

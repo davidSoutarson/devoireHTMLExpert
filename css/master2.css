@@ -20,10 +20,10 @@
 #wraper{
   max-width: 1850px;
   min-width: 940px;
-  margin: 0 auto;
-  border: 2px solid purple;
+  margin: 10px auto;
 }
 
+/*  ################ CHOI DES COULEURS   ################ */
 .fond-rouge{
   background-color: var(--rouge,);
 }
@@ -54,12 +54,11 @@
 }
 
 .en-tete{
-  border: 2px dashed blue ;
-  margin: 10px;
+  /* border: 2px dashed blue ; */
+  /* margin: 10px; */
 }
 
 .contener-logoTitre{
-  border: 2px dashed black ;
   margin: 10px;
   display: flex;
   justify-content:space-between;
@@ -73,7 +72,6 @@
 }
 
 .menue-principal{
-  border: 4px dashed yellow ;
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -92,17 +90,72 @@
   margin: 20px;
   padding: 5px;
   border-radius: 15px;
-
 }
 
 .contener-bouton{
-  margin: 20px;
+  margin: 20px auto;
   text-align: center;
 }
+
 .bouton{
   margin: 20px;
   padding: 20px;
   border-radius:30px;
+}
+
+.ar{
+  width: 100%;
+  display: block;
+  border: 5px ridge var(--grisClair);
+  margin: 5px
+}
+
+.titreAR{
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+/*  ################ Partie  2 Colone Principale 2/3 1/3  ################  */
+
+.col-X2{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.colGauche{
+  width: 66.66%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.colDroite{
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
+}
+
+picture{
+  width: 100%;
+  display: block;
+  /* margin: 20px auto; */
+}
+
+picture img{
+  display: block;
+}
+
+table{
+  width: 100%;
+}
+
+.PF{
+  /* border:6px double red; */
 }
 
 .btnRegader{
@@ -110,40 +163,16 @@
   padding: 20px;
 }
 
-.titreAR{
-  margin: 20px;
-  padding: 20px;
-  text-align: center;
+.floutage-transparent{
+  background-color: var(--grisClair,0.5);
+  /* height: 500px; */
 }
 
+/* .floutage-transparent:hover{
+  display: block;
+}  */
 
-main{
-  border: 2px solid red;
-  margin: 20px ;
-  /* display: flex;
-  flex-direction: row; */
-}
-
-.artice2colne{
-  display: flex;
-  flex-direction: row;
-}
-
-.colGauche{
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: flex-end
-}
-
-.colDroite{
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: flex-end
-}
+/*  ################ Partie pour le bas de la pages  2 clone 50%  */
 
 .col2neBas{
   display: flex;
@@ -156,4 +185,22 @@ main{
   flex-direction: column;
   align-items: baseline;
   justify-content: flex-end
+}
+
+/* ################ Partie pour le footeur ################ */
+
+.footNav{
+  /* border: 4px solid red; */
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ .liste-3col{
+   column-count: 3;
+   width: 60%;
+ }
+
+.liste-3col li{
+  display: block;
 }
