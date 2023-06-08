@@ -1,6 +1,7 @@
 :root{
   --rouge: #ae2123;
   --bleu: #527bea;
+  --blanc: #fff;
   --grisClair: #ededed;
   --grisFonce: #858585;
   --textRollOver: #999;
@@ -21,8 +22,6 @@
   min-width: 940px;
   margin: 0 auto;
   border: 2px solid purple;
-  display: flex;
-  flex-direction: column;
 }
 
 .fond-rouge{
@@ -37,19 +36,124 @@
   background-color: var(--grisClair,);
 }
 
-.entete{
+.fond-bleu{
+  background-color: var(--bleu,);
+}
+
+.texte-blanc{
+  color: var(--blanc,);
+}
+
+.item:hover{
+    color: var(--textRollOver,);
+}
+
+.bouton:hover{
+  background-color: var(--boutonsRollOver,);
+  color: var(--textRollOver,);
+}
+
+.en-tete{
   border: 2px dashed blue ;
   margin: 10px;
 }
 
 .contener-logoTitre{
-
+  border: 2px dashed black ;
+  margin: 10px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
 }
 
 .titrePrincipal{
-
+  color: var(--bleu,);
+  margin: 20px;
+  padding: 5px;
 }
 
 .menue-principal{
+  border: 4px dashed yellow ;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
 
+.menue-principal ul{
+    display: flex;
+}
+
+.item{
+  margin: 20px;
+  padding: 5px;
+}
+
+#recherche{
+  margin: 20px;
+  padding: 5px;
+  border-radius: 15px;
+
+}
+
+.contener-bouton{
+  margin: 20px;
+  text-align: center;
+}
+.bouton{
+  margin: 20px;
+  padding: 20px;
+  border-radius:30px;
+}
+
+.btnRegader{
+  margin: 20px;
+  padding: 20px;
+}
+
+.titreAR{
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+main{
+  border: 2px solid red;
+  margin: 20px ;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.artice2colne{
+  display: flex;
+  flex-direction: row;
+}
+
+.colGauche{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: flex-end
+}
+
+.colDroite{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: flex-end
+}
+
+.col2neBas{
+  display: flex;
+  flex-direction: row;
+}
+
+.col{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: flex-end
 }
