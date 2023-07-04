@@ -24,8 +24,6 @@
   list-style-type: none;
   text-decoration: none;
   border-collapse: collapse;
-  font-family: "BenchNine","sans-serif";
-
 }
 
 p,h2,h3,td,th,button,input,span,li{
@@ -83,7 +81,7 @@ h1{
 }
 /*  ################ Partie Pour le Heder ################  */
 .en-tete{
- margin: 10px;
+ margin-bottom: 1.5em;
 }
 
 .contener-logoTitre{
@@ -121,49 +119,16 @@ h1{
 }
 /* --------- Fin de Partie ---------- */
 /*  ################  les mise en page repetitive  ################ */
-.contener-bouton{
-  margin: 20px auto;
-  text-align: center;
-}
 
-.bouton{
-  margin: 20px;
-  padding: 10px 20px;
-  border: none;
-}
-
-.arondi{
-  border-radius:50px;
-}
 
 .ar{
   display:flex;
-  padding: 10px;
-  border: 5px ridge var(--grisClair);
+  padding: 1.5em;
+  border: 6px  outset var(--grisClair);
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
-
-/* .horaire,.addrese,.portFolio{
-  height: 100%;
-} */
-
-.horaire{
-
-}
-
-
-
-.addrese{
-
-}
-
-
-.portFolio{
-
-}
-
 
 .titreAR{
   margin: 20px;
@@ -176,17 +141,68 @@ h1{
 /* --------- Fin de Partie ---------- */
 /*  ################ Partie  2 Colone Principale 5/8 3/8  ################  */
 
+
+main{
+  display: grid;
+  grid-row-gap: 1.5em;
+}
+
 .contener2col{
   display: grid;
   grid-template-columns: 5fr 3fr;
+  grid-column-gap: 1.5em;
+
 }
 
 .colGauche{
-
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
 }
 
-.colDroite{
+.TlaUne{
+  display: grid;
+  grid-template-columns:1fr;
+    white-space: nowrap;
+}
 
+.imagePrinsipale{
+display: grid;
+grid-column-start: 1;
+grid-column-end: 6;
+}
+
+.texte{
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.contener-bouton{
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  justify-items: center;
+}
+
+.bouton{
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  white-space: nowrap;
+}
+
+.arondi{
+  border-radius:50px;
+}
+/* --------------------------------------------------------------------------- */
+.colDroite{
+  display: grid;
+  grid-template-columns:3fr;
+  grid-row-gap: 1.5em;
 }
 
 .vcard{
@@ -238,6 +254,7 @@ picture,img,table{
   display: flex;  /*a modifier pour petite ecrant*/
   flex-direction: row; /*a modifier pour petite ecrant*/
   align-items: flex-end;
+  margin-bottom: 1.5em;
 }
 
 .col{
@@ -246,7 +263,7 @@ picture,img,table{
   flex-direction: column;
   align-items: baseline;
   justify-content: flex-end;
-  margin:10px;
+  margin:0.75em;
 }
 
 /* ################ Partie pour le footeur ################ */
