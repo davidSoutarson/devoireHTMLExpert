@@ -29,18 +29,13 @@
 p,h2,h3,td,th,button,input,span,li{
     font-family: "BenchNine","sans-serif";
     font-size: 1.5em;
-    line-height: 1.5;
+    line-height: 1.5em;
 }
 
 h1{
   font-family: "Chela One";
 }
 
-#wraper{
-  max-width: 1850px;
-  min-width: 940px;
-  margin: 10px auto;
-}
 /*  ################ CHOI DES COULEURS   ################ */
 .fond-rouge{
   background-color: var(--rouge,);
@@ -79,13 +74,20 @@ h1{
     color: var(--textRollOver,);
     background-color: var(--grisClair,);
 }
+
+#wraper{
+  max-width: 1850px;
+  min-width: 940px;
+  margin: 1.5em auto;
+}
+
 /*  ################ Partie Pour le Heder ################  */
 .en-tete{
  margin-bottom: 1.5em;
 }
 
 .contener-logoTitre{
-  margin: 10px;
+  margin: 1.5em;
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -93,7 +95,7 @@ h1{
 
 .titrePrincipal{
   color: var(--bleu,);
-  margin: 20px;
+  margin: 1.5em;
   padding: 5px;
 }
 
@@ -135,7 +137,6 @@ h1{
   padding: 0px 20px;
   text-align: center;
   display: block;
-
 }
 
 /* --------- Fin de Partie ---------- */
@@ -151,7 +152,6 @@ main{
   display: grid;
   grid-template-columns: 5fr 3fr;
   grid-column-gap: 1.5em;
-
 }
 
 .colGauche{
@@ -162,7 +162,7 @@ main{
 .TlaUne{
   display: grid;
   grid-template-columns:1fr;
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .imagePrinsipale{
@@ -222,6 +222,7 @@ picture,img,table{
 }
 
 
+/* gestion du masque de floutage  */
 
 .contener-floutage{
   position: relative;
@@ -235,18 +236,20 @@ picture,img,table{
   background-color: var(--grisClairTransparan,);
   width: 80%;
   height: 80%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   position:absolute;
   top:10%;
 }
 
-.masque-grisClair:active{
-  /display: none;
+
+.contener-floutage:hover{
+  .masque-grisClair{
+    display: flex;
+  }
 }
-
-
+/* Fin gestion du masque de floutage  */
 
 /*  ################ Partie pour le bas de la pages  2 clone 50%  */
 
