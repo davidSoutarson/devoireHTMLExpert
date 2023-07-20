@@ -77,7 +77,7 @@ h1{
 
 #wraper{
   max-width: 1850px;
-  min-width: 940px;
+
   margin: 1.5em auto;
 }
 
@@ -284,4 +284,59 @@ picture,img,table{
 
 .liste-3col li{
   display: block;
+}
+
+
+
+/*----------------------------@media------------------------------------*/
+
+@media screen and (max-width: 940px){
+
+
+
+ main, #wraper, .contener2col, .colDroite  {
+   display: flex;
+   flex-direction: column;
+}
+
+.ar,.col2neBas,.col{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin:1.5em auto;
+}
+
+
+.contener-logoTitre {
+    display: block;
+    text-align: center;
+}
+
+
+
+.menue-principal{
+  display: block;
+
+}
+
+.menue-principal ul{
+  display: block;
+}
+
+.footNav{
+  display: flex;
+  align-items:  flex-start;
+}
+
+.liste-3col {
+    margin: 1.5em ;
+    display: block;
+    column-count: 1;
+}
+
+.logo{
+  width: 50%;
+}
+
 }

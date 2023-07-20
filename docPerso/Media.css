@@ -1,0 +1,26 @@
+/*---------------LES MEDIA QUERISE--------------------
+ presentation de la régle CSS @media et des media queris ("requetes média")
+- Exemple d'utilsation de @media avec certaine de ses valeurs;
+- Creation d"apparence diferante en CSS selon lataile de lecran du visiteur;
+- Gérer l'orientation der la page
+- Note sur la performence. */
+
+
+/* METRE LES REGLE NON SEPSIFIQUE*/
+
+/*dans cette Exemple pour tous les ecrant <= 680px */
+@media screen and (max-width: 680px){
+
+  body{
+    background-color: orange;
+  }
+
+}
+/*dans cette Exemple pour tous les ecrant don la taile et entre 681 1279px*/
+@media screen and (min-width: 681px) and (max-whidth: ){
+
+  body{
+    background-color: blue;
+  }
+
+}
